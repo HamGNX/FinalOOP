@@ -1,4 +1,4 @@
-package Logic;
+package crab1.Logic;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -8,6 +8,10 @@ public abstract class Shape {
     private int y;
     private Color color;
     
+public Shape(){
+
+}
+
     public Shape(int x, int y, Color color) {
         this.x = x;
         this.y = y;

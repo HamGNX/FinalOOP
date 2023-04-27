@@ -1,4 +1,4 @@
-package Logic;
+package crab1.Logic;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -42,7 +42,8 @@ public class ShapeHolder extends Shape {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
         if (currentShape != null) {
-            currentShape.paintComponent(g2d, x, y);
+           g.draw()
+        
         }
     }
 

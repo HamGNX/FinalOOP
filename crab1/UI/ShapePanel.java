@@ -1,4 +1,4 @@
-package UI;
+package crab1.UI;
 
 
 import java.awt.Dimension;
@@ -10,7 +10,7 @@ import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Logic.Shape;
+import crab1.Logic.Shape;
 
 public class ShapePanel extends JPanel {
 

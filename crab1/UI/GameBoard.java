@@ -1,4 +1,4 @@
-package UI;
+package crab1.UI;
 
 import javax.swing.*;
 import java.awt.*;

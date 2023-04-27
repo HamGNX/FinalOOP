@@ -1,4 +1,4 @@
-package Logic;
+package crab1.Logic;
 
 import java.util.ArrayList;
 import java.util.Collections;
