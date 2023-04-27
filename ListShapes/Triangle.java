@@ -1,6 +1,9 @@
+package ListShapes;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Polygon;
+
+import Game.Shape;
 
 public class Triangle extends Shape {
 

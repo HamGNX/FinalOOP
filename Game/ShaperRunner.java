@@ -1,9 +1,17 @@
+package Game;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import ListShapes.Circle;
+import ListShapes.Oval;
+import ListShapes.Rectangle;
+import ListShapes.Square;
+import ListShapes.Triangle;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class ShapeMatchingGame extends JPanel {
+public class ShaperRunner extends JPanel {
 
     private ShapeHolder shapeHolder;
     private long startTime;
@@ -22,9 +30,9 @@ public class ShapeMatchingGame extends JPanel {
     private Timer timer;
     private AtomicBoolean timerRunning;
 
-    public ShapeMatchingGame() {
+    public ShaperRunner() {
         setLayout(new BorderLayout());
-        setBackground(Color.WHITE);
+        setBackground(Color.LIGHT_GRAY);
 
         shapeHolder = new ShapeHolder();
         timerRunning = new AtomicBoolean(false);
@@ -61,7 +69,7 @@ public class ShapeMatchingGame extends JPanel {
                         bestTime = Math.min(bestTime, time);
                         String message = String.format("You matched all the shapes in %.2f seconds. Best time: %.2f seconds",
                                 time / 1000.0, bestTime / 1000.0);
-                        JOptionPane.showMessageDialog(ShapeMatchingGame.this, message, "Congratulations!", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(ShaperRunner.this, message, "Congratulations!", JOptionPane.INFORMATION_MESSAGE);
                         shapeHolder.reset();
                     }
                     repaint();
@@ -86,7 +94,7 @@ public class ShapeMatchingGame extends JPanel {
     }
 
     public void start() {
-        JFrame frame = new JFrame("Shape Matching Game");
+        JFrame frame = new JFrame("Shaper Runner");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(this);
         frame.pack();
@@ -95,7 +103,7 @@ public class ShapeMatchingGame extends JPanel {
     }
 
     public static void main(String[] args) {
-        ShapeMatchingGame game = new ShapeMatchingGame();
+        ShaperRunner game = new ShaperRunner();
         game.start();
     }
 }

@@ -1,6 +1,13 @@
+package Game;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import ListShapes.Circle;
+import ListShapes.Oval;
+import ListShapes.Rectangle;
+import ListShapes.Square;
+import ListShapes.Triangle;
 
 public class ShapeHolder {
     private List<Shape> shapes;

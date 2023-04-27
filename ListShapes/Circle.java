@@ -1,5 +1,8 @@
+package ListShapes;
 import java.awt.Color;
 import java.awt.Graphics;
+
+import Game.Shape;
 
 public class Circle extends Shape {
 

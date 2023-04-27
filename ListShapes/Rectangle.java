@@ -1,10 +1,13 @@
+package ListShapes;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Oval extends Shape {
+import Game.Shape;
+
+public class Rectangle extends Shape {
     private int width;
 
-    public Oval(int x, int y, int width, int height, Color color) {
+    public Rectangle(int x, int y, int width, int height, Color color) {
         super(x, y, height, color);
         this.width = width;
     }
@@ -12,7 +15,7 @@ public class Oval extends Shape {
     @Override
     public void draw(Graphics g) {
         g.setColor(getColor());
-        g.fillOval(getX(), getY(), width, getSize());
+        g.fillRect(getX(), getY(), width, getSize());
     }
 
     @Override
