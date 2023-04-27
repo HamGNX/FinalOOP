@@ -4,15 +4,21 @@ import java.awt.Graphics;
 public class Rectangle extends Shape {
 
     private int width;
+    private int height;
 
     public Rectangle(int x, int y, int width, int height, Color color) {
         super(x, y, height, color);
         this.width = width;
+        this.height = height;
     }
 
     @Override
     public void draw(Graphics g) {
         g.setColor(getColor());
-        g.fillRect(getX(), getY(), width, getSize());
+        g.fillRect(getX(), getY(), width, height);
+    }
+
+    public int getHeight() {
+        return height;
     }
 }
